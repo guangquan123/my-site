@@ -73,4 +73,4 @@ qiniu:
   serectkey: "eWqB64OLC0oH71Hr23U9DBCK9G30qsYRcUzcGrpe"
   bucket: "guangquanspace"
   cdn:
-    url: "qjkjfxvgs.hn-bkt.clouddn.com"
+    url: "http://qjkjfxvgs.hn-bkt.clouddn.com/"

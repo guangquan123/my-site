@@ -1,6 +1,6 @@
 package cn.luischen.api;
 
-import cn.luischen.utils.TaleUtils;
+
 import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
@@ -9,9 +9,7 @@ import com.qiniu.storage.Configuration;
 import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -22,6 +20,7 @@ import java.io.IOException;
  */
 @Component
 public class QiniuCloudService {
+
 
     @Value("${qiniu.accesskey}")
     private String ACCESS_KEY;
@@ -58,9 +57,7 @@ public class QiniuCloudService {
         String upToken = auth.uploadToken(BUCKET);
         try {
             Response response = null;
-
             response = uploadManager.put(file.getInputStream(), fileName, upToken, null, null);
-
             //解析上传成功的结果
             DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class);
             System.out.println(putRet.key);
