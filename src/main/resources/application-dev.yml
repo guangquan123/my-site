@@ -69,8 +69,3 @@ swagger:
   show: true
 
 qiniu:
-  accesskey: "KOF73JZrxE0Je0xaMI0PfKxLW-GWjyLmEDpC96dB"
-  serectkey: "eWqB64OLC0oH71Hr23U9DBCK9G30qsYRcUzcGrpe"
-  bucket: "guangquanspace"
-  cdn:
-    url: "http://qjkjfxvgs.hn-bkt.clouddn.com/"
