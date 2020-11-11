@@ -3180,7 +3180,7 @@
         [key + "-4"]       : "h4",
         [key + "-5"]       : "h5",
         [key + "-6"]       : "h6",
-        [key + "-B"]       : "bold",  // if this is string ==  editormd.toolbarHandlers.xxxx
+        [key + "-B"]       : "bold",
         [key + "-D"]       : "datetime",
         
         [key + "Ctrl-E"]       : function() { // emoji
